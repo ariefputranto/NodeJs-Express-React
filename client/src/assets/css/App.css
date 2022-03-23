@@ -1,0 +1,137 @@
+/* Spinner Start */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #000080;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000080 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Spinner End */
+
+
+/* App Start */
+.choose-plan-container {
+  max-width: 900px;
+  display: block;
+  margin: auto;
+  border: 2px dotted #D3D3D3;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.choose-plan-container .title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+}
+
+.choose-plan-container .plan-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose-plan-container .plan-container .feature-list {
+  flex: 1 1 auto;
+  padding-top: 51px;
+}
+
+.choose-plan-container .plan-container .feature-list .feature-wrapper .feature-items {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #D3D3D3;
+  word-wrap: nowrap;
+}
+
+.choose-plan-container .plan-container .plan-list {
+  flex: 0 0 auto;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-items-img {
+  max-height: 20px;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 51px;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-wrapper {
+  display: flex;
+  max-width: 450px;
+  overflow: auto;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-card {
+  flex: 0 0 20%;
+  border: 1px dotted #D3D3D3;
+  border-radius: 20px;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-card .plan-title {
+  padding-left: 16px;
+  padding-right: 16px;
+  text-align: center;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-card .plan-price-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-card .plan-price-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4px;
+}
+
+.choose-plan-container .plan-container .plan-list .plan-card .price-radio {
+  margin: 0;
+}
+
+/* App End  */

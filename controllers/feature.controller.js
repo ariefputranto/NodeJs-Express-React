@@ -67,7 +67,7 @@ const Feature = require('../models/feature.model');
  */
  function store(req, res) {
     const schema = Joi.object({
-        feature_name: Joi.string().min(1).alphanum().required(),
+        feature_name: Joi.string().min(1).required(),
     })
 
     const validate = schema.validate(req.body)
@@ -106,7 +106,7 @@ const Feature = require('../models/feature.model');
  */
  function update(req, res) {
     const schema = Joi.object({
-        feature_name: Joi.string().min(1).alphanum().required(),
+        feature_name: Joi.string().min(1).required(),
     })
 
     const validate = schema.validate(req.body)

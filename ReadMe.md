@@ -8,7 +8,8 @@ example app using NodeJs and ReactJs
 
 # How to use
 
-run "sudo chmod +x ./entrypoint.sh"
+run "sudo chmod +x entrypoint.sh"
+run "./entrypoint.sh"
 
 # Library that being used
 - ExpressJs
